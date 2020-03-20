@@ -1,0 +1,18 @@
+<p>heroes works! And the best one is:</p>
+
+
+<div *ngIf="hero">
+<input [(ngModel)]="hero.name"/>  
+<p>The above hero has id: {{hero.id}} </p>
+</div>
+
+<div>
+<p>But we have more heroes:</p>
+<ul>
+   <li *ngFor="let item of heroes" 
+   (click)="selectHero(item)" 
+   [class.clase_random]="item === hero" > <!-- Angular class binding conditionally. Just add [class.some-css-class]="some-condition" to the element you want to style. -->
+       {{item.name}}
+   </li> 
+</ul>
+</div>
