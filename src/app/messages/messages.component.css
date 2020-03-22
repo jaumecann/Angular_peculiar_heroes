@@ -1,0 +1,6 @@
+.borderyellow {
+    border: solid 1px yellow;
+    padding: 5px;
+    background-color: #f8faa2;
+    height: 200px;
+}

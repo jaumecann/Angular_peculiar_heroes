@@ -1,0 +1,13 @@
+
+<div [ngClass]="'boxred'">
+
+    <p>This is the hero-detail component:</p>
+
+
+    <div *ngIf="heroinput">
+    <input [(ngModel)]="heroinput.name"/>  
+    <p>The above hero has id: {{heroinput.id}} </p>
+    </div>
+
+
+</div>
